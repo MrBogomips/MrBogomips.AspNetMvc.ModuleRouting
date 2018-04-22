@@ -62,6 +62,14 @@ namespace Sample.MvcModuleA
 
 et voilà…
 
+## Sample
+Recall that you're just using the MVC routing template syntax therefore, you can use any string template that makes sense for Asp.Net MVC.
+For example:
+- `[RouteModule("ModuleName")]`: simply define the module-routing dependency
+- `[RouteModule("ModuleName", "custom/segment")]`: the `custom/segnment` will be appended to the module routing template
+- `[RouteModule("ModuleName", "[controller]")]`: the controller's name will be appended to the module routing template
+- `[RouteModule("ModuleName", "[action]")]`: the action's name will be appended to the module routing template
+
 ## Suggested Practice...
 ... for a complex, wide Web Api organization:
 
