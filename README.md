@@ -13,7 +13,7 @@ wich is the elective way to define a WebApi routing.
 
 Thi package aims to fill the gap.
 
-Even it express its usefulness at best in conjuction with modularized
+Even if it shows its usefulness at best in conjuction with modularized
 app development, you can also use it as an alternative way to maintain the
 routing configuration in a module-fashion style.
 
