@@ -7,6 +7,9 @@
     <Owners>Giovanni Costagliola</Owners>
     <Title>AspNet Core Module Based Routing</Title>
     <Description>An Asp.Net Core MVC extension to complement the Application Part feature with a Module Routing base.</Description>
+    <PackageId>MrBogomips.AspNetMvc.ModuleRouting</PackageId>
+    <PackageProjectUrl>https://github.com/MrBogomips/MrBogomips.AspNetMvc.ModuleRouting</PackageProjectUrl>
+    <PackageTags>aspnetcore routing mvc aspnet api</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
