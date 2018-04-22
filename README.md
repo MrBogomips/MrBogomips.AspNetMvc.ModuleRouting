@@ -7,7 +7,7 @@ and easily aggregate them within an hosting app.
 The support for routing, in cotrast, is a bit too hostic.
 
 **Area**s give some kind of support but are not mixable with Annotated routing
-wich is the elctive way to define a WebApi routing.
+wich is the elective way to define a WebApi routing.
 
 Thi package aims to fill the gap.
 
@@ -38,7 +38,7 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 }
 
 ```
-
+### «Your Modular» Controller.cs
 Within your controller you simply decorate it:
 ```
 using MrBogomips.AspNetMvc.ModuleRouting;
@@ -60,4 +60,13 @@ namespace Sample.MvcModuleA
 
 et voilà…
 
-## Suggested Practice
+## Suggested Practice...
+... for a complex, wide Web Api organization:
+
+- Split your api within separte modules, i.e. Assemblies
+- Within each module provide a base `Controller` class decorated with one
+  of the `RoutModule` attributes
+- Aggregate the modules in your host app by `AddAppicationPart(…)`
+- Configure your modular routing by `MapModuleRoute(…)`
+
+For a reference app check out the Sample App of this project.
