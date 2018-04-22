@@ -11,6 +11,7 @@
     <PackageProjectUrl>https://github.com/MrBogomips/MrBogomips.AspNetMvc.ModuleRouting</PackageProjectUrl>
     <PackageTags>aspnetcore routing mvc aspnet api</PackageTags>
     <PackOnBuild>true</PackOnBuild>
+    <Summary>Asp.net Core Mvc Module Router</Summary>
   </PropertyGroup>
 
   <ItemGroup>

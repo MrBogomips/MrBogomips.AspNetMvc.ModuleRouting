@@ -1,3 +1,5 @@
+[![NuGet](https://img.shields.io/nuget/v/Nuget.Core.svg)](https://www.nuget.org/packages/MrBogomips.AspNetMvc.ModuleRouting/)
+
 ##  Motivation
 This packages arises from the need to develop a modular Web Api.
 
@@ -66,7 +68,7 @@ et voilà…
 - Split your api within separte modules, i.e. Assemblies
 - Within each module provide a base `Controller` class decorated with one
   of the `RoutModule` attributes
-- Aggregate the modules in your host app by `AddAppicationPart(…)`
+- Aggregate the modules in your host app by `AddApplicationPart(…)`
 - Configure your modular routing by `MapModuleRoute(…)`
 
 For a reference app check out the Sample App of this project.
