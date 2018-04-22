@@ -62,7 +62,7 @@ namespace Sample.MvcModuleA
 
 et voilà…
 
-## Sample
+## Examples
 Recall that you're just using the MVC routing template syntax therefore, you can use any string template that makes sense for Asp.Net MVC.
 For example:
 - `[RouteModule("ModuleName")]`: simply define the module-routing dependency
