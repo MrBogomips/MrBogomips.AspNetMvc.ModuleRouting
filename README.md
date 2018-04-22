@@ -79,4 +79,22 @@ For example:
 - Aggregate the modules in your host app by `AddApplicationPart(…)`
 - Configure your modular routing by `MapModuleRoute(…)`
 
+### A good sample of BaseController class for modular development
+```
+namespace My.Module.Namespace {
+    [RouteModule(ModuleBaseController.ModuleName)]
+    public abstract class ModuleBaseController: BaseController
+    {
+        public const string ModuleName = nameof(My.Module.Namespace);
+    }
+}
+```
+Derived controllers can also tweek their routing in a more portable waqy
+```
+    [RouteModule(ModuleBaseController.ModuleName, "some/different/admin/path")]
+    public class AdminController: ModuleBaseController
+    {
+        public const string ModuleName = nameof(My.Module.Namespace);
+    }
+```
 For a reference app check out the Sample App of this project.
