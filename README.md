@@ -1,7 +1,7 @@
 [![NuGet](https://img.shields.io/nuget/v/Nuget.Core.svg)](https://www.nuget.org/packages/MrBogomips.AspNetMvc.ModuleRouting/)
 
 ##  Motivation
-This packages arises from the need to develop a modular Web Api.
+This package arises from the need to develop a modular Web Api.
 
 Asp.Net Core, by the mean of **Application Parts** allows you to modularize the code
 and easily aggregate them within an hosting app.
