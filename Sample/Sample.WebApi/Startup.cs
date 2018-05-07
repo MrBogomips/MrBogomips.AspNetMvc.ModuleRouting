@@ -25,12 +25,14 @@ namespace Sample.WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // Assembly loading required in case of dynamic MVC Components injection.
+            // Left for reference.
             var assemplyModuleA = typeof(Sample.MvcModuleA.ModuleController).GetTypeInfo().Assembly;
             var assemplyModuleB = typeof(Sample.MvcModuleB.ModuleController).GetTypeInfo().Assembly;
             services
                 .AddMvc()
-                .AddApplicationPart(assemplyModuleA)
-                .AddApplicationPart(assemplyModuleB);
+                .AddApplicationPart(assemplyModuleA)  // See above
+                .AddApplicationPart(assemplyModuleB); // See above
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

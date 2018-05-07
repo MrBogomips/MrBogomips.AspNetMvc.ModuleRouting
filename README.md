@@ -97,4 +97,15 @@ Derived controllers can also tweek their routing in a more portable waqy
         public const string ModuleName = nameof(My.Module.Namespace);
     }
 ```
+Therefore the routing coinfig can be accomplished more strongly as
+```
+app.UseMvc(routes =>
+{
+   //...
+
+   routes.MapModuleRoute(My.Module.Namespace.ModuleBaseController.ModuleName, "my/module/path");
+
+   //...
+}
+```
 For a reference app check out the Sample App of this project.
