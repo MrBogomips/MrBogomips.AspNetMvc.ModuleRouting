@@ -85,7 +85,7 @@ namespace My.Module.Namespace {
     [RouteModule(ModuleBaseController.ModuleName)]
     public abstract class ModuleBaseController: BaseController
     {
-        public const string ModuleName = nameof(My.Module.Namespace);
+        public const string ModuleName = "My.Module.Namespace";
     }
 }
 ```
@@ -94,7 +94,7 @@ Derived controllers can also tweek their routing in a more portable waqy
     [RouteModule(ModuleBaseController.ModuleName, "some/different/admin/path")]
     public class AdminController: ModuleBaseController
     {
-        public const string ModuleName = nameof(My.Module.Namespace);
+        
     }
 ```
 Therefore the routing coinfig can be accomplished more strongly as
